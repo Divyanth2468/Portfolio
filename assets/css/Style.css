@@ -561,8 +561,8 @@ body {
   
   
  .resume_hobby ul li{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border: 2px solid #fff;
     border-radius: 50%;
     position: relative;
@@ -570,10 +570,10 @@ body {
   }
   
   .resume_hobby ul li i{
-    font-size: 25px;
+    font-size: 30px;
     position: relative;
     top: 30%;
-    left: 27%;
+    left: 30%;
     transform: translate(-50%,-50%);
   }
 

@@ -550,7 +550,7 @@ body {
       top: 10px;
       left: -23px;
       width: 2px;
-      height: 155px;
+      height: 150px;
       background: #18d26e;
   }
   
@@ -560,9 +560,9 @@ body {
   }
   
   
-  .resume_hobby ul li{
-    width: 80px;
-    height: 80px;
+ .resume_hobby ul li{
+    width: 60px;
+    height: 60px;
     border: 2px solid #fff;
     border-radius: 50%;
     position: relative;
@@ -570,10 +570,10 @@ body {
   }
   
   .resume_hobby ul li i{
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     top: 30%;
-    left: 30%;
+    left: 27%;
     transform: translate(-50%,-50%);
   }
 

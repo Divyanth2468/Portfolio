@@ -435,6 +435,9 @@ body {
   .bar .progress-line.JS span{
     width: 15%;
   }
+  .bar .progress-line.Bs span{
+    width: 50%;
+  }
   .bar .progress-line.C span{
     width: 75%;
   }
@@ -484,6 +487,9 @@ body {
   }
   .progress-line.JS span::after{
     content: "15%";
+  }
+  .progress-line.Bs span::after{
+    content: "50%";
   }
   .progress-line.C span::after{
     content: "75%";

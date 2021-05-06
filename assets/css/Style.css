@@ -549,14 +549,23 @@ body {
     
   .resume .resume_work ul li:after,
   .resume .resume_sumary li:after,
-  .resume .resume_education li:after,
+  .resume .resume_education li:after{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -23px;
+      width: 2px;
+      height: 180px;
+      background: #18d26e;
+  }
+
   .resume .resume_hobby li::after{
       content: "";
       position: absolute;
       top: 10px;
       left: -23px;
       width: 2px;
-      height: 150px;
+      height: 120px;
       background: #18d26e;
   }
   

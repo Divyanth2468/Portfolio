@@ -120,11 +120,39 @@
     })
   }
 })()
-var myMusic=new Audio('assets/Music/Grateful.mp3');
-function playing(){
+var random=Math.floor(Math.random()*6);
+
+var myMusic;
+
+function makeSound(key){
+  switch(key){
+    case 0:
+       myMusic=new Audio('assets/Music/Best-of-me.mp3');
+      break;
+    case 1:
+      myMusic=new Audio('assets/Music/Aurora.mp3');
+      break;
+    case 2:
+      myMusic=new Audio('assets/Music/Grateful.mp3');
+      break;
+    case 3:
+      myMusic=new Audio('assets/Music/Feeling-Good.mp3');
+      break;
+    case 4:
+      myMusic=new Audio('assets/Music/First-time.mp3');
+      break;
+    case 5:
+       myMusic=new Audio('assets/Music/Monster.mp3');
+       break;
+  }
   myMusic.play();
+}
+
+function playing(){
+  makeSound(random);
 }
 function paused(){
   myMusic.pause();
 }
+
 

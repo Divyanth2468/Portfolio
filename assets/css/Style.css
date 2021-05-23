@@ -434,10 +434,10 @@ body {
     width: 70%;
   }
   .bar .progress-line.JS span{
-    width: 15%;
+    width: 60%;
   }
   .bar .progress-line.Bs span{
-    width: 50%;
+    width: 60%;
   }
   .bar .progress-line.C span{
     width: 75%;

@@ -160,13 +160,9 @@
                     <p class="card-text">"Behind every favourite song there is an untold story."</p>
                   </div>
                 </div>
-                  <audio controls id="music">
-                      <source src="assets/Music/Grateful.mp3">
-                      Your Browser Does Not Support This Element
-                  </audio>
                   <h2>Listen to my current favourite by clicking on this button</h2>
-                  <button type="btn btn-primary" onclick="play()">play</button>
-                  <button type="btn btn-primary" onclick="pause()">Pause</button>
+                  <button type="btn btn-primary play" onclick="play()">play</button>
+                  <button type="btn btn-primary pause" onclick="pause()">Pause</button>
             </div>
             </div>
           </div>
@@ -329,14 +325,12 @@
         </div>
       </section>
     <script>
-        var myMusic= document.getElementById("music");
-        function play() {
-           myMusic.play();
-          }
-
-       function pause() {
-          myMusic.pause();
-         }
+        document.querySelector(".play").addEventListner("click",function(){
+            var myMusic=new Audio('assets/Music/Grateful.mp3');
+            myMusic.play();});
+        document.querySelector(".pause").addEventListner("click",function(){
+            var myMusic=new Audio('assets/Music/Grateful.mp3');
+            myMusic.pause();});
 
     </script>
       <script src="assets/js/main.js"></script>

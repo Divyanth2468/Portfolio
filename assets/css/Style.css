@@ -487,10 +487,10 @@ body {
     content: "60%";
   }
   .progress-line.JS span::after{
-    content: "15%";
+    content: "60%";
   }
   .progress-line.Bs span::after{
-    content: "50%";
+    content: "60%";
   }
   .progress-line.C span::after{
     content: "75%";

@@ -120,3 +120,7 @@
     })
   }
 })()
+
+document.querySelector(".favourite").addEventListner("click",function(){
+  var audio=new Audio('assets/Music/NEFFEX - Grateful [Copyright Free] (320 kbps).mp3');
+  audio.play();});

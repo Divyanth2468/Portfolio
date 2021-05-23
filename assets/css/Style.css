@@ -8,7 +8,7 @@ body {
     position: relative;
     background: transparent;
   }
-  
+
   body::before {
     content: "";
     position: fixed;
@@ -20,27 +20,27 @@ body {
     height: 100vh;
     z-index: -1;
   }
-  
+
   @media (min-width: 1024px) {
     body::before {
       background-attachment: fixed;
     }
   }
-  
+
   a {
     color: #18d26e;
     text-decoration: none;
   }
-  
+
   a:hover {
     color: #35e888;
     text-decoration: none;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
   }
-  
+
   #header {
     transition: ease-in-out 0.3s;
     position: relative;
@@ -50,11 +50,11 @@ body {
     z-index: 997;
     overflow-y: auto;
   }
-  
+
   #header * {
     transition: ease-in-out 0.3s;
   }
-  
+
   #header h1 {
     font-size: 58px;
     margin: 0;
@@ -63,35 +63,35 @@ body {
     font-weight: 700;
     font-family: "Sacramento", sans-serif;
   }
-  
+
   #header h1 a, #header h1 a:hover {
     color: #fff;
     line-height: 1;
     display: inline-block;
   }
-  
+
   #header h2 {
     font-size: 24px;
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.8);
   }
-  
+
   #header h2 span {
     color: #fff;
     border-bottom: 2px solid #18d26e;
     padding-bottom: 6px;
   }
-  
+
   #header img {
     padding: 0;
     margin: 0;
   }
-  
+
   #header .social-links {
     margin-top: 40px;
     display: flex;
   }
-  
+
   #header .social-links a {
     font-size: 16px;
     display: flex;
@@ -105,11 +105,11 @@ body {
     width: 40px;
     height: 40px;
   }
-  
+
   #header .social-links a:hover {
     background: #18d26e;
   }
-  
+
   @media (max-width: 992px) {
     #header h1 {
       font-size: 36px;
@@ -127,7 +127,7 @@ body {
       align-items: center;
     }
   }
-  
+
   #header.header-top {
     height: 80px;
     position: fixed;
@@ -136,25 +136,25 @@ body {
     right: 0;
     background: rgba(0, 0, 0, 0.9);
   }
-  
+
   #header.header-top .social-links, #header.header-top h2 {
     display: none;
   }
-  
+
   #header.header-top h1 {
     margin-right: auto;
     font-size: 36px;
   }
-  
+
   #header.header-top .container {
     display: flex;
     align-items: center;
   }
-  
+
   #header.header-top .navbar {
     margin: 0;
   }
-  
+
   @media (max-width: 768px) {
     #header.header-top {
       height: 60px;
@@ -163,12 +163,12 @@ body {
       font-size: 26px;
     }
   }
-  
+
   .navbar {
     padding: 0;
     margin-top: 35px;
   }
-  
+
   .navbar ul {
     margin: 0;
     padding: 0;
@@ -176,15 +176,15 @@ body {
     list-style: none;
     align-items: center;
   }
-  
+
   .navbar li {
     position: relative;
   }
-  
+
   .navbar li + li {
     margin-left: 30px;
   }
-  
+
   .navbar a {
     display: flex;
     align-items: center;
@@ -197,13 +197,13 @@ body {
     white-space: nowrap;
     transition: 0.3s;
   }
-  
+
   .navbar a i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
   }
-  
+
   .navbar a:before {
     content: "";
     position: absolute;
@@ -216,16 +216,16 @@ body {
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
   }
-  
+
   .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
     visibility: visible;
     width: 25px;
   }
-  
+
   .navbar a:hover, .navbar .active, .navbar li:hover > a {
     color: #fff;
   }
-  
+
   .mobile-nav-toggle {
     color: #fff;
     font-size: 28px;
@@ -237,7 +237,7 @@ body {
     right: 15px;
     top: 15px;
   }
-  
+
   @media (max-width: 991px) {
     .mobile-nav-toggle {
       display: block;
@@ -246,7 +246,7 @@ body {
       display: none;
     }
   }
-  
+
   .navbar-mobile {
     position: fixed;
     overflow: hidden;
@@ -259,13 +259,13 @@ body {
     z-index: 999;
     margin-top: 0;
   }
-  
+
   .navbar-mobile .mobile-nav-toggle {
     position: absolute;
     top: 15px;
     right: 15px;
   }
-  
+
   .navbar-mobile ul {
     display: block;
     position: absolute;
@@ -278,15 +278,15 @@ body {
     transition: 0.3s;
     border: 2px solid rgba(255, 255, 255, 0.2);
   }
-  
+
   .navbar-mobile li {
     padding: 12px 20px;
   }
-  
+
   .navbar-mobile li + li {
     margin: 0;
   }
-  
+
   .navbar-mobile a {
     font-size: 16px;
     position: relative;
@@ -302,19 +302,19 @@ body {
     transition: ease-in-out 0.4s;
     z-index: 2;
   }
-  
+
   section.section-show {
     top: 100px;
     bottom: auto;
     opacity: 1;
     padding-bottom: 45px;
   }
-  
+
   section .container {
     background: rgba(0, 0, 0, 0.9);
     padding: 30px;
   }
-  
+
   @media (max-width: 768px) {
     section {
       top: 120px;
@@ -323,7 +323,7 @@ body {
       top: 80px;
     }
   }
-  
+
   .section-title h2 {
     font-size: 14px;
     font-weight: 500;
@@ -335,7 +335,7 @@ body {
     color: #aaaaaa;
     font-family: "Poppins", sans-serif;
   }
-  
+
   .section-title h2::after {
     content: "";
     width: 120px;
@@ -344,7 +344,7 @@ body {
     background: #4ceb95;
     margin: 4px 10px;
   }
-  
+
   .section-title p {
     margin: 0;
     margin: -15px 0 15px 0;
@@ -503,7 +503,7 @@ body {
   }
 
   .card1{
-    color: #000; 
+    color: #000;
   }
 
 
@@ -511,7 +511,7 @@ body {
     color: #18d26e;
     font-size: 35px;
   }
-    
+
   .resume .resume_work ul,
   .resume .resume_sumary ul,
   .resume .resume_education ul{
@@ -519,21 +519,21 @@ body {
       overflow: hidden;
       list-style: none;
   }
-    
+
   .resume ul li{
       position: relative;
     }
-    
+
   .resume ul li .info{
       margin-bottom: 30px;
       font-size: 23px;
       font-family: "Roboto Slab", "Helvetica Neue",;
   }
-    
+
   .resume ul li:last-child .info{
       margin-bottom: 0;
   }
-    
+
   .resume .resume_work ul li:before,
   .resume .resume_sumary li:before,
   .resume .resume_education li::before,
@@ -547,7 +547,7 @@ body {
       border-radius: 50%;
       border: 2px solid #18d26e;
   }
-    
+
   .resume .resume_work ul li:after,
   .resume .resume_sumary li:after,
   .resume .resume_education li:after{
@@ -569,13 +569,13 @@ body {
       height: 120px;
       background: #18d26e;
   }
-  
-  
+
+
   .resume .resume_hobby ul{
     list-style: none;
   }
-  
-  
+
+
  .resume_hobby ul li{
     width: 80px;
     height: 80px;
@@ -584,7 +584,7 @@ body {
     position: relative;
     color: #fff;
   }
-  
+
   .resume_hobby ul li i{
     font-size: 30px;
     position: relative;
@@ -651,11 +651,11 @@ body {
     margin-bottom: 20px;
     opacity: 0.9;
   }
-  
+
   .contact-form .text-box:first-child{
     margin-right: 15px;
   }
-  
+
   .contact-form textarea{
     background: #141414;
     color: gray;
@@ -671,7 +671,7 @@ body {
     margin-bottom: 20px;
     opacity: 0.9;
   }
-  
+
   .contact-form .btn-color{
     background: #18d26e;
     color: #fff;
@@ -687,12 +687,12 @@ body {
     transition: 0.3s;
     transition-property: background;
   }
-  
+
     .contact-info, .contact-form{
       margin: 30px 50px;
     }
-  
+
     .contact-form .text-box{
       width: 100%;
     }
- 
+

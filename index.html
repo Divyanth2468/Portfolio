@@ -160,8 +160,13 @@
                     <p class="card-text">"Behind every favourite song there is an untold story."</p>
                   </div>
                 </div>
+                  <audio controls id="music">
+                      <source src="assets/Music/Grateful.mp3">
+                      Your Browser Does Not Support This Element
+                  </audio>
                   <h2>Listen to my current favourite by clicking on this button</h2>
-                  <button type="btn btn-primary favourite">current favourite</button>
+                  <button type="btn btn-primary" onclick="play()">play</button>
+                  <button type="btn btn-primary" onclick="pause()">Pause</button>
             </div>
             </div>
           </div>

@@ -484,7 +484,7 @@ body {
     content: "80%";
   }
   .progress-line.css span::after{
-    content: "60%";
+    content: "70%";
   }
   .progress-line.JS span::after{
     content: "60%";

@@ -120,7 +120,11 @@
     })
   }
 })()
+var myMusic=new Audio('assets/Music/Grateful.mp3');
+function playing(){
+  myMusic.play();
+}
+function paused(){
+  myMusic.pause();
+}
 
-document.querySelector(".favourite").addEventListner("click",function(){
-  var audio=new Audio('assets/Music/Grateful.mp3');
-  audio.play();});

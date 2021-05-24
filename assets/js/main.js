@@ -121,7 +121,7 @@
   }
 })()
 
-var random=Math.floor(Math.random()*6);
+var random=Math.floor(Math.random()*7);
 
 var myMusic;
 
@@ -145,6 +145,12 @@ function makeSound(key){
     case 5:
        myMusic=new Audio('assets/Music/Monster.mp3');
        break;
+    case 6:
+      myMusic=new Audio('assets/Music/Arcade.mp3');
+      break;
+    default:
+      console.log("error");
+      break;
   }
 }
 
@@ -164,6 +170,6 @@ function paused(){
 function skipped(){
   myMusic.pause();
   myMusic=null;
-  random=Math.floor(Math.random()*6);;
+  random=Math.floor(Math.random()*7);;
   playing();
 }

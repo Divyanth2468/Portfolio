@@ -120,6 +120,7 @@
     })
   }
 })()
+
 var random=Math.floor(Math.random()*6);
 
 var myMusic;
@@ -145,20 +146,24 @@ function makeSound(key){
        myMusic=new Audio('assets/Music/Monster.mp3');
        break;
   }
-  myMusic.play();
 }
 
 function playing(){
-  if(myMusic==null)
-      makeSound(random);
-  myMusic.play();
+  if(myMusic==null){
+    makeSound(random);
+    myMusic.play();
+  }
+  else{
+    myMusic.play();
+  }
 }
-else{
-  myMusic.play();
-}
-
 function paused(){
   myMusic.pause();
 }
 
-
+function skipped(){
+  myMusic.pause();
+  myMusic=null;
+  random=Math.floor(Math.random()*6);;
+  playing();
+}

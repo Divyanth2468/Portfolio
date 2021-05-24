@@ -149,8 +149,14 @@ function makeSound(key){
 }
 
 function playing(){
-  makeSound(random);
+  if(myMusic==null)
+      makeSound(random);
+  myMusic.play();
 }
+else{
+  myMusic.play();
+}
+
 function paused(){
   myMusic.pause();
 }

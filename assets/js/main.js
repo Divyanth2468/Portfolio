@@ -146,11 +146,18 @@ function makeSound(key){
        myMusic=new Audio('assets/Music/Monster.mp3');
        break;
     case 6:
-      myMusic=new Audio('assets/Music/Arcade.mp3');
-      break;
-    default:
-      console.log("error");
-      break;
+        myMusic=new Audio('assets/Music/Arcade.mp3');
+        break;
+  }
+}
+
+function Show(){
+  var pics=document.getElementById("my-pics");
+  if(pics.style.display ==="none"){
+    pics.style.display = "block";
+  }
+  else{
+    pics.style.display = "none";
   }
 }
 

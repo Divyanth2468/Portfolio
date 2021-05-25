@@ -506,6 +506,67 @@ body {
     color: #000;
   }
 
+  #my-pics{
+    display: none;
+  }
+
+  @media (max-width: 1024px){
+    .display{
+      display: none;
+    }
+    .friends-card{
+      display: none;
+    }
+  }
+
+  .image{
+    position: relative;
+    width: 500px;
+  }
+
+  .image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .image__overlay > *{
+    transform:translateY(25px);
+    transition: transform 0.5s;
+  }
+
+  .image__overlay:hover{
+    opacity: 1;
+  }
+
+  .image__overlay:hover > *{
+    transform: translateY(0px);
+  }
+
+  .image__title{
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .image__description{
+    font-size: 1.25rem;
+    line-height: 1;
+    align-items: center;
+    font-family: "Sacramento", sans-serif;
+  }
+
 
   .resume .bold{
     color: #18d26e;
@@ -695,4 +756,3 @@ body {
     .contact-form .text-box{
       width: 100%;
     }
-

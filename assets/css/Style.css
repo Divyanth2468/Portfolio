@@ -681,11 +681,30 @@ body {
 
   .bio h5{
     font-size: 15px;
-    padding-left: 40px;
+  }
+
+  .bio .contact-address{
+    padding-left: 115px;
+  }
+
+  .bio .contact-phone{
+    padding-left: 120px;
+  }
+
+  .bio .contact-mail{
+    padding-left: 125px;
   }
 
   .bio p{
-    left: -20px;
+    padding-left: 60px;
+  }
+
+  .bio .contact-phone-p{
+    padding-left: 85px;
+  }
+
+  .bio .contact-mail-p{
+    padding-left: 45px;
   }
 
   .contact-me{

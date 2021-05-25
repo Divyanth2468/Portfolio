@@ -3,22 +3,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
-<!--     Stylesheet -->
     <link rel="stylesheet" href="assets/css/Style.css">
-<!--     Icons -->
-    <link rel="icon" href="assets/img/me.jpeg">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
     <title>Divyanth Satya</title>
+    <link rel="icon" href="assets/img/me.jpeg">
 </head>
 <body>
     <header id="header">
         <div class="container">
-    
-          <h1><a href="index.html">Divyanth Satya</a></h1>
-          <h2>A passionate <span>web developer</span>, India</h2>
-    
+
+          <h1 class="heade-heading"><a href="index.html">Divyanth Satya</a></h1>
+          <h2 class="first-link">A passionate <span>web developer</span>, India</h2>
+
           <nav id="navbar" class="navbar">
             <ul>
               <li><a class="nav-link active" href="#header">Home</a></li>
@@ -28,14 +25,14 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav>
-    
+
           <div class="social-links">
             <a href="https://twitter.com/DivyanthSatya" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="https://www.instagram.com/_.divyanth._/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
             <a href="https://github.com/Divyanth2468" target="_blank" class="github"><i class="bi bi-github"></i></a>
             <a href="https://www.linkedin.com/in/uppuluri-divyanth-861902202/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
-    
+
         </div>
       </header>
       <section class="about" id="about">
@@ -147,13 +144,48 @@
           <div class="container interests">
             <div class="row">
               <div class="col-lg-6">
-                <div class="card bg-dark card1">
-                  <img src="assets/img/nature.jpg" class="card-img" alt="...">
+                <div class="card bg-dark card1 friends-card">
+                  <img src="assets/img/card1.jpg" class="card-img" alt="...">
                   <div class="card-img-overlay">
-                    <h5 class="card-title">Nature Lover</h5>
-                    <p class="card-text">"My wish is to stay always like this living quitely in a corner of nature."</p>
+                    <h5 class="card-title">Friends</h5>
+                    <p class="card-text">"Loyalty is about people who stay true to you behind your back"</p>
                   </div>
                 </div>
+                <h2 class="display">Check that out</h2>
+                <button type="button" class="btn btn-light display" onclick="Show()">Friends</button>
+              </div>
+              <div class="container" id="my-pics">
+              <div class="row">
+              <div class="col-lg-6">
+              <div class="image">
+                <img class="image__img img-fluid" src="Images/childhood.jpg" alt="childhood">
+                <div class="image__overlay">
+                  <div class="image__titile">Divyanth Satya</div>
+                  <p class="image__description">True friends are never apart, maybe in distance but never in heart</p>
+                </div>
+               </div>
+               </div>
+               <div class="col-lg-6">
+               <div class="image">
+                 <img class="image__img img-fluid" src="Images/clg.jpeg" alt="childhood">
+                 <div class="image__overlay">
+                   <div class="image__titile"></div>
+                   <p class="image__description">Find a group of people who challenge and inspire you, spend a lot of time with them and it will change your life</p>
+                 </div>
+                </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                <div class="image">
+                  <img class="image__img img-fluid" src="Images/my.jpeg" alt="childhood">
+                  <div class="image__overlay">
+                    <div class="image__titile"></div>
+                    <p class="image__description">Dont down grade your dream just to fit your reality.Upgrade your conviction to match your destiny</p>
+                  </div>
+                 </div>
+                 </div>
+              </div>
               </div>
               <div class="col-lg-6">
                 <div class="card bg-dark text-white">
@@ -164,9 +196,18 @@
                   </div>
                 </div>
                   <h2>Listen to my current favourite by clicking on this button</h2>
-                  <button type="button" class="btn btn-light" onclick="playing()">play</button>
-                  <button type="button" class="btn btn-light" onclick="paused()">pause</button>
-                  <button type="button" class="btn btn-light" onclick="skipped()">Skip</button>
+                  <button type="btn btn-primary" onclick="playing()">Play</button>
+                  <button type="btn btn-primary" onclick="paused()">Pause</button>
+                  <button type="btn btn-primary" onclick="skipped()">Skip</button>
+            </div>
+            <div class="col-lg-6">
+              <div class="card bg-dark card1">
+                <img src="assets/img/nature.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Nature Lover</h5>
+                  <p class="card-text">"My wish is to stay always like this living quitely in a corner of nature."</p>
+                </div>
+              </div>
             </div>
             </div>
           </div>
@@ -188,22 +229,22 @@
                <ul>
                 <li>
                   <div class="info">
-                       <p class="semi-bold">Divyanth Satya</p> 
+                       <p class="semi-bold">Divyanth Satya</p>
                   </div>
               </li>
               <li>
                 <div class="info">
-                       <p class="semi-bold">Innovative Design</p> 
+                       <p class="semi-bold">Innovative Design</p>
                   </div>
               </li>
               <li>
                 <div class="info">
-                     <p class="semi-bold">Vijayawada</p> 
+                     <p class="semi-bold">Vijayawada</p>
                 </div>
             </li>
             <li>
               <div class="info">
-                     <p class="semi-bold">uppuluridivyanth@gmail.com</p> 
+                     <p class="semi-bold">uppuluridivyanth@gmail.com</p>
                 </div>
             </li>
               </ul>
@@ -222,12 +263,12 @@
                   </li>
                   <li>
                       <div class="info">
-                           <p class="semi-bold">Bachelor Of Technology Computer Science Engineering</p> 
+                           <p class="semi-bold">Bachelor Of Technology Computer Science Engineering</p>
                       </div>
                   </li>
                   <li>
                       <div class="info">
-                           <p class="semi-bold">Indian Institute Of Information Technology Kottayam</p> 
+                           <p class="semi-bold">Indian Institute Of Information Technology Kottayam</p>
                       </div>
                   </li>
               </ul>
@@ -242,27 +283,27 @@
           <ul>
               <li>
                   <div class="info">
-                       <p class="semi-bold">Design Team at In-Design Club IIITK</p> 
+                       <p class="semi-bold">Design Team at In-Design Club IIITK</p>
                   </div>
               </li>
               <li>
                 <div class="info">
-                       <p class="semi-bold">2020-Present</p> 
+                       <p class="semi-bold">2020-Present</p>
                   </div>
               </li>
               <li>
                 <div class="info">
-                       <p class="semi-bold">Kottayam</p> 
+                       <p class="semi-bold">Kottayam</p>
                   </div>
               </li>
               <li>
                   <div class="info">
-                         <p class="semi-bold">A member in the design and outreach team of In-Design club IIITK</p> 
+                         <p class="semi-bold">A member in the design and outreach team of In-Design club IIITK</p>
                     </div>
                 </li>
               <li>
                   <div class="info">
-                         <p class="semi-bold">Being an Innovative,I try to show my sarcasm through Designs</p> 
+                         <p class="semi-bold">Being an Innovative,I try to show my sarcasm through Designs</p>
                     </div>
                 </li>
           </ul>
@@ -331,4 +372,3 @@
       <script src="assets/js/main.js"></script>
 </body>
 </html>
-

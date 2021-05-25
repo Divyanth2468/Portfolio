@@ -137,7 +137,7 @@ function makeSound(key){
       myMusic=new Audio('assets/Music/Grateful.mp3');
       break;
     case 3:
-      myMusic=new Audio('assets/Music/Feeling-Good.mp3');
+      myMusic=new Audio('assets/Music/Rambo.mp3');
       break;
     case 4:
       myMusic=new Audio('assets/Music/First-time.mp3');

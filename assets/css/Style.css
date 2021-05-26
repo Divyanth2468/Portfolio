@@ -664,6 +664,12 @@ body {
     font-family: "Roboto Slab" , sans-serif;
   }
 
+   @media (max-width: 768px){
+    .bio{
+      padding-left: 100px;
+    }
+  }
+
   .bio i{
     background: #18d26e;
     width: 60px;

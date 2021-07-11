@@ -437,7 +437,7 @@ body {
     width: 60%;
   }
   .bar .progress-line.Bs span{
-    width: 60%;
+    width: 100%;
   }
   .bar .progress-line.Node span{
     width: 70%;
@@ -502,7 +502,7 @@ body {
     content: "60%";
   }
   .progress-line.Bs span::after{
-    content: "60%";
+    content: "100%";
   }
   .progress-line.Node span::after{
     content: "70%";
